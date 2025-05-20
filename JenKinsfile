@@ -30,13 +30,13 @@ pipeline {
                     reuseNode true
                 }
             }
-            steps{
-                sh 
-                  '''
+            steps {
+                sh '''
                     test -f build/index.html
                     npm test
-                  '''
+                 '''
             }
+
         }
     }
 }
